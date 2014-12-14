@@ -893,12 +893,12 @@ int main(int argc, char** argv) {
   /* Interactive Prompt */
   if (argc == 1) {
   
-    puts("Lispy Version 0.0.0.1.0");
+    puts("Seanlisp Version 0.0.0.1.0");
     puts("Press Ctrl+c to Exit\n");
   
     while (1) {
     
-      char* input = readline("lispy> ");
+      char* input = readline("seanlisp> ");
       add_history(input);
       
       mpc_result_t r;
