@@ -27,7 +27,7 @@ seanlisp>
 ```
 
 A Hello World Example:
-``lisp
+```lisp
 ```
 
 ## TODO
