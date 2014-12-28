@@ -26,7 +26,32 @@ seanlisp> (+ 1 2)
 seanlisp>
 ```
 
-## Language Features
+A Hello World Example:
+``lisp
+```
+
+## TODO
+* A Garbage Collector
+* Lexical Scoping
+* Macros
+
+# Language Features
+
+## Operators
+
+## Symbolic Expression
+
+## Quoted expression
+
+## Variables
+
+## Functions
+
+## Conditions
+
+## Strings
+
+## Recursion
 
 ## MIT License
 
