@@ -38,16 +38,59 @@ A Hello World Example:
 # Language Features
 
 ## Operators
+Seanlisp uses reverse polish notation, the operator comes before the variables.
+It supports four operators:
+'+', '-', '*' or '/'
 
-## Symbolic Expression
+Basic operatrions can be written like so:
+```lisp
+seanlisp> (+ 1 2 6)
+seanlisp> (+ 6 (* 2 9))
+seanlisp> (/ (* 10 2) (+ 4 2))
+```
+and as you can see, are processed in a list.
+
+Lists can be defined like so:
+```lisp
+seanlisp> list 1 2 3 4 5 6 7
+{1 2 3 4 5 6 7}
+```
 
 ## Quoted expression
+
+You may also use an eval operator to evaluate expressions in quoted expressions
+```lisp
+eval
+```
 
 ## Variables
 
 ## Functions
 
+Lambda expressions are formed using a slash:
+```lisp
+seanlisp> \ {x y} {+ x y}
+seanlisp> def {add} (\ {x y} {+ x y})
+seanlisp> add 10 20
+30
+```
+
 ## Conditions
+
+seanlisp supports these conditional statements, for literals and variables:
+```lisp
+seanlisp> > 10 5
+1
+seanlisp> <= 88 5
+0
+seanlisp> == 5 6
+0
+seanlisp> == 5 {}
+0
+seanlisp> == 1 1
+1
+seanlisp> != {} 56
+```
 
 ## Strings
 
