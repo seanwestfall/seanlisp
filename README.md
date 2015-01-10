@@ -83,6 +83,16 @@ seanlisp> add 10 20
 30
 ```
 
+Functions have to be defined like this:
+```lisp
+seanlisp> 
+(fun {map f l} {
+  if (== l nil)
+    {nil}
+    {join (list (f (fst l))) (map f (tail l))}
+})
+```
+
 ## Conditions
 
 seanlisp supports these conditional statements, for literals and variables:
@@ -104,9 +114,12 @@ seanlisp> != {} 56
 String can be defined like so:
 ```lisp
 seanlisp> "hello world"
+"hello world"
 ```
 
 ## Recursion
+
+## Fun with functions
 
 ## MIT License
 
