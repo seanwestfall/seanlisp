@@ -65,6 +65,14 @@ eval
 
 ## Variables
 
+Varialbes have to be defined with a Quoted expression:
+```
+seanlisp> def {x} 100
+()
+seanlisp> x
+100
+```
+
 ## Functions
 
 Lambda expressions are formed using a slash:
@@ -93,6 +101,10 @@ seanlisp> != {} 56
 ```
 
 ## Strings
+String can be defined like so:
+```lisp
+seanlisp> "hello world"
+```
 
 ## Recursion
 
